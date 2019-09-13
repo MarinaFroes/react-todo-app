@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
+import styled from 'styled-components';
+
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Todos from './Components/Todos';
-import styled from 'styled-components';
 
 const AppContainer = styled.div`
   display: flex;
@@ -11,10 +12,10 @@ const AppContainer = styled.div`
   height: 100vh;
 `;
 
-const App: React.FC = () => {
+const App: React.FC = (): JSX.Element => {
   return (
     <AppContainer className="App">
-      <Header title="Todo app"/>
+      <Header />
       <Todos />
       <Footer />
     </AppContainer>
